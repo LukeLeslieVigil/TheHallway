@@ -13,6 +13,7 @@ public class CameraTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             activeCam.Priority = 1;
+            Debug.Log("Entered Zone");
         }
 
     }
@@ -22,6 +23,7 @@ public class CameraTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             activeCam.Priority = 0;
+            Debug.Log("Exited Zone");
         }
     }
 }

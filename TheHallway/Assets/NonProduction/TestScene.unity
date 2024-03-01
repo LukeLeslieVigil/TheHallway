@@ -211,13 +211,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160868006}
   m_LocalRotation: {x: -0, y: -0, z: -4.656613e-10, w: 1}
-  m_LocalPosition: {x: 0, y: 0.49999976, z: -0}
+  m_LocalPosition: {x: 0, y: 0.49999976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1409041635}
   m_Father: {fileID: 2142165017}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &160868008
 MonoBehaviour:
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
-    m_Style: 1
+    m_Style: 0
     m_Time: 2
     m_CustomCurve:
       serializedVersion: 2
@@ -1461,9 +1461,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139742115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.363, z: 0.52}
-  m_LocalScale: {x: 0.51, y: 0.51, z: 0.51}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0.475, z: 0.368}
+  m_LocalScale: {x: 0.51, y: 0.18, z: 0.51}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1733355404}
   m_RootOrder: 0
@@ -1745,7 +1745,7 @@ Transform:
   - {fileID: 2043395173}
   - {fileID: 1531542282}
   m_Father: {fileID: 2142165017}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1163171439
 MonoBehaviour:
@@ -2037,7 +2037,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 1
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -2214,7 +2214,7 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AutoDolly:
-    m_Enabled: 0
+    m_Enabled: 1
     m_PositionOffset: 0
     m_SearchRadius: 2
     m_SearchResolution: 5
@@ -2323,9 +2323,9 @@ GameObject:
   - component: {fileID: 1733355404}
   - component: {fileID: 1733355403}
   - component: {fileID: 1733355402}
-  - component: {fileID: 1733355401}
   - component: {fileID: 1733355400}
   - component: {fileID: 1733355399}
+  - component: {fileID: 1733355405}
   m_Layer: 0
   m_Name: TempPlayer
   m_TagString: Player
@@ -2365,20 +2365,6 @@ MonoBehaviour:
   movementWalkSpeed: 3
   movementRunSpeed: 5
   rotationSpeed: 150
---- !u!136 &1733355401
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733355398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1733355402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2437,7 +2423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733355398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.86883706, y: 1, z: 1.6088728}
+  m_LocalPosition: {x: -0.86883706, y: 1.2, z: 1.6088728}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2445,6 +2431,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1733355405
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733355398}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1886174240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,7 +2684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043395172}
   m_LocalRotation: {x: 0.54975194, y: -0.000000029802322, z: -4.079226e-11, w: 0.835328}
-  m_LocalPosition: {x: 10.826691, y: 4.576926, z: 7.594364}
+  m_LocalPosition: {x: 10.869999, y: 3.4967875, z: 8.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2706,10 +2708,10 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 0
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1733355404}
   m_Lens:
     FieldOfView: 71.9
     OrthographicSize: 10
@@ -2758,8 +2760,8 @@ Transform:
   m_Children:
   - {fileID: 1118481285}
   - {fileID: 1389506635}
-  - {fileID: 1163171438}
   - {fileID: 160868007}
+  - {fileID: 1163171438}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
